@@ -1,28 +1,179 @@
-<!DOCTYPE html5>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>Hello!</title>
-    <!-- General META -->
-    <meta charset="utf-8">
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TravelersBD</title>
+      <link rel="stylesheet" href="public/views/user/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="basic.js"></script>
+
+</head>
   <body>
-    <h2>Hello!</h2>
-    <button id="test">Show all articles</button>
-    <div id="list"></div>
-  </body>
-  <script src="lib/jquery/dist/jquery.min.js"></script>
-  <script src="vendor/ejs_production.js"></script>
-  <script>
-  $("#test").click(function(){
-    $.get("/api/articles", function(data, status){
-      var html = new EJS({url: 'views/article/list.ejs'}).render({articles:data});
-    $("#list").html(html);
-    });
-  });
-  </script>
+      <header class="header">
+            <h1 class="logo"><a href="#"> TravelersBD</a></h1>
+          <ul class="main-nav">
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Packages">Packages</a></li>
+              <li><a href="#Stories">Stories</a></li>
+              <li><a href="#Contact">Contact</a></li>
+          </ul>
+      </header> 
+
+      <div class="rslides_container" id="Home">
+          <div class="mySlides fade">
+              <img src="images/shundarban.jpg"   height="600" width="100%" >
+          </div>
+          <div class="mySlides fade">
+            <img src="images/cheraip.jpg" height="600" width="100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/ratarhulm.jpg" height="600" width="100%">">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/coxsbazaz.jpg" height="600" width="100%">">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/rang.jpg" height="600" width="100%">">
+          </div>
+      </div>
+      <hr>
+        
+
+            <div class="row"  id="About">
+                  <div class="column side" style="background-color:#fff;">
+                    <img src="about.jpg"  alt="Table Setting" width="600" height="450"  >
+                  </div>
+                 
+                  <div class="column middle" >
+                    <h4>SO GLAD YOU ARE HERE</h4>
+                    <h1 >TRAVEL WITH US</h1>
+                    <h1 class="border"></h1>
+                    
+                    <p><strong> Welcome to Bangladesh - An unspoiled land of beauty and hospitality! </strong>
+                      Bangladesh is a beautiful country of South Asia. Within it are primeval swamps full of man-eating tigers, the unseen relics of long-forgotten Buddhist kingdoms, lush and lurid tea plantations, tribal groups with Burmese faces, glorious beaches that stretch for eternity, freshwater dolphins and deep-water whales, and some of the most open-hearted people you'll ever meet. 
+                      On this website, you will get information about the best Bangladesh tour packages, Bangladesh tourist attractions, best Bangladesh travel tips from the experts, and more to make your Bangladesh travel a breeze. Have a nice holiday in Bangladesh!</p>
+                      <p>TravelersBD  is an award winning tour operator in Bangladesh, which believes in quality sf it's service, and in the end wants to see the happy faces of every of their clients. It has seen rated 5* numerous times by it's clients in TripAdvisor and currently ranking among the top there for all the tour operators in Bangladesh. .</p>
+                    </p>
+                  
+                </div>
+            </div>
+            <hr>
+
+                      <div class="rowTwo" id="Packages">
+                          <h1 >MOST POPULAR PACKAGES</h1>
+                          <h1 class="borderTwo" style="width: 40% "></h1>
+                                <div class="columnTwo sideTwo" >
+                                    <div class="card">
+                                        <img src="images/coxsbazaz.jpg" alt="John" height="250" width="100%">
+                                        <h2>Cox's Bazar</h2>
+                                        
+                                        <h4>Starts at 1st May</h4>
+                                        
+                                       <!--//<li><a href="#" class="fas fa-clock"></a></li>
+                                        //<i class="fas fa-clock"></i>-->
+                                       <div id="button"><a href="coxsbazar.html" target="_blank">Detail</a></div>
+                                      </div>
+                                </div>
+
+                                        <div class="columnTwo sideTwo" >
+                                            <div class="card">
+                                                <img src="images/shundarban.jpg" alt="John" height="250" width="100%">
+                                                <h2>Sundarbans</h2>
+                                                 <h4>Starts at 1st June</h4>
+                                               <div id="button"><a href="Sundarbans.html" target="_blank">Detail</a></div>
+                                              </div>
+                                        </div>
+
+                                            <div class="columnTwo sideTwo" >
+                                                <div class="card">
+                                                    <img src="images/sri.jpg" alt="John" height="250" width="100%">
+                                                    <h2>Sylhet</h2>
+                                                     <h4>Starts at 1st July</h4>
+                                                    <div id="button"><a href="sylhet.html" target="_blank">Detail</a></div>
+                                                  </div>
+
+                                            </div>
+                                           
+                      </div>
+                      <hr>
+
+                                <h2><button class=" button2">Travel Stories</button></h2>
+
+        <div class="row" id="Stories">
+                  <div class="column side" style="background-color:#fff;">
+                  <img src="images/story1.jpg"  alt="Ttravel stories" width="100%" height="350"  >
+                  <p style="color: green"><a href="login.html">
+                    <strong> Experience of jackie and Mike Hulton from Surey,England of traveling Bangladesh for 3 weeks in February 2018,including Chittagong Hill-Tracts area.!</p><span>Read Rest....</span>  
+                      </a>
+
+                   <!-- <div id="button" ><a href="login.html" target="_blank">Raed Rest of The Story....</a></div>-->
+                  </div>
+            </div>
+            <hr>
+                    <footer class="footer" id="Contact">
+                            <div class="rowTwo">
+                                                  <div class="columndes sideTwo" align="Center">
+                                                      <h2>follow US</h2>
+                                                      <ul>
+                                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                                        <li> <a href="#" class="fa fa-youtube"></a></li>
+                                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                                        <li><a href="#" class="fa fa-pinterest"></a></li>
+                                                      </ul>
+                                                  </div>
+                                                          <div class="columndes sideTwo" >
+                                                              <h2>Our Address</h2>
+                                                              <p><ul>
+                                                                    <li>Dhaka Tread Center (11th Floor)</li>
+                                                                    <li>99 KaziNazrul Islam Avenue</li>
+                                                                    <li>Block-K; Karwan Bazar</li>
+                                                                    <li>Dhaka-1215; Bangladesh</li>
+                                                                  </ul>
+                                                                </p>
+                                                          </div>
+                                                              <div class="columndes sideTwo" >
+                                                                <h2>Contact US</h2>
+                                                                <p>
+                                                                  <ul>
+                                                                    <li>Hotline:+88-01714 094 175</li>
+                                                                    <li>TEL:+88 2 8189 286/7</li>
+                                                                    <li>E-mail:inbound@travelersbd.com</li>
+                                                                  </ul>
+                                                                </p>
+                                                                </div>
+                                  </div>
+                                                             
+                              </div>
+                      </footer>                        
+      <hr>                      
+                <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 3000);
+                }
+                </script>
+    
+      
+
+
+
+      
+
+   
+
+      
+</body>
 </html>
